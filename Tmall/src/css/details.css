@@ -1,0 +1,369 @@
+@charset "UTF-8";
+.header_bar {
+  color: #999;
+  width: auto;
+  height: 32px;
+  padding-bottom: 5px;
+  position: relative !important;
+  background: #f12f04;
+  border-bottom-color: transparent !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  border-bottom: 1px solid #e5e5e5; }
+.header_bar a, .header_bar #mallLogo .mlogo a img, #mallLogo .mlogo a .header_bar img {
+  color: #fff; }
+
+.header_container {
+  position: relative;
+  left: -15px;
+  width: 1230px;
+  margin: auto; }
+.header_container .login_info {
+  color: #fff;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px; }
+.header_container .login_info .login {
+  padding-left: 20px; }
+.header_container .login_info .register {
+  padding: 0 10px; }
+.header_container .quick_menu {
+  position: absolute;
+  right: 0;
+  top: 0; }
+.header_container .quick_menu li {
+  float: left;
+  padding: 0 10px; }
+.header_container .quick_menu li:hover a, .header_container .quick_menu li:hover #mallLogo .mlogo a img, #mallLogo .mlogo a .header_container .quick_menu li:hover img {
+  color: #FF0036; }
+.header_container .quick_menu li a, .header_container .quick_menu li #mallLogo .mlogo a img, #mallLogo .mlogo a .header_container .quick_menu li img {
+  display: block;
+  cursor: pointer;
+  z-index: 100001;
+  border: 0;
+  position: relative;
+  height: 32px;
+  line-height: 32px; }
+.header_container .quick_menu li a span, .header_container .quick_menu li #mallLogo .mlogo a img span, #mallLogo .mlogo a .header_container .quick_menu li img span {
+  color: #e5e5e5;
+  padding: 0 2px;
+  font-weight: 700;
+  font-family: Arial; }
+.header_container .quick_menu li .menu_hd span {
+  color: #fff;
+  display: block;
+  height: 32px;
+  line-height: 32px; }
+
+.footer_ensure {
+  width: 1190px;
+  height: 100px;
+  background: url("https://img.alicdn.com/tfs/TB14dANRXXXXXbdXXXXXXXXXXXX-1190-100.jpg") no-repeat;
+  margin: 25px auto; }
+
+.footer_desc {
+  width: 1190px;
+  padding-top: 22px;
+  height: 190px;
+  margin: auto;
+  border-top: 1px solid #ededed;
+  background: url("data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAZCAMAAAC/3XipAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABdFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDAxZWVmhoaG/v7+7u7u3t7eFhYU0NDQBAQFmZmbo6Oj////w8PAtLS2NjY24uLgnJycDAwOmpqZvb2/b29v09PRFRUVubm6np6cEBASXl5f29vZzc3MxMTEwMDB0dHSZmZk/Pz/Nzc0CAgIoKChAQEDDw8OAgIDv7+9TU1N/f38aGhr+/v5aWlrLy8uoqKhSUlJBQUGxsbHi4uLg4OBqamo3Nzf6+voiIiI2NjZjY2M8PDysrKzz8/P39/cFBQXy8vKtra07OztkZGRERERGRka2trbU1NRgYGBhYWHT09MJCQllZWXV1dV4eHh6enr19fWcnJyRkZEGBgYuLi4HBwd24IQCAAAAJXRSTlMAA2PD7um8WQEKurKksbCPMGaA+kA+tewkzd4c3d/iL+D5lU03tZLoQgAAAAFiS0dEMdnbHXIAAAHWSURBVDjLrZH5OwJRFIYnUrKWnQjVFSblVtYiS0j2fc2+72T3z7vnaOpOJmY8zi+955y+d+7MFQRdTq4+z2DMF7RWvtGQp8/N0TE0FRCsQpNGh6nwK1jAgkUkWcU6TQ5diRQsEgSSqlJNktJ00MxJiEWDw8LlynhJeYVqR2U5l6viJaS6RqWjppqP1cokpM6qymGtl6Ua5BJia1ThaLTJQ00ZEtJsdzjNP5XTYW8mv0j+Uv8uaXG1trWL7o5fIh1usb2t1dWiJPF4O6nPTwKUdnX/oOgWKQ0Qv492ej3fJD29lNI+9ttPaTCU1REKUtrfQ8gA+/dgOFMyxKbDcMQRgNEsjsgw247BqwOMZ0gm2IyKeF6g6KSiwxOFZQxQBJqSS6ZhNoM4CzinKJmDlQ9xHnBaJllYhNkS8jLgiqJkBVbLiC5AusBLVnG0hrwOuKEo2YTVOuIaJlZ5yRaOtpEHAeNSbicSiexITTx9yF1MbPGSPRztIx8AHiZj4SPWHB0nuxNYnSKeYeKcl1zg6BL5CvBaevgNa26l5i51h+QSExe85D4IowfkBGAg9R0e6VOKA7BKID4APt/LrvgFZq9Ab/Dii+/prxlLox8uMf4B+AqBl+QVfwLVX9WAqgikVgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wMi0yMFQwOTo0NjoxNCswODowMHgr8vYAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDItMjBUMDk6NDY6MTQrMDg6MDAJdkpKAAAAAElFTkSuQmCC") 45px bottom no-repeat; }
+.footer_desc dl {
+  float: left;
+  width: 186px;
+  padding-left: 52px; }
+.footer_desc dl dt {
+  color: #646464;
+  font-size: 16px;
+  font-weight: 700;
+  height: 30px;
+  line-height: 30px;
+  text-align: left; }
+.footer_desc dl dd {
+  text-align: left; }
+.footer_desc dl a, .footer_desc dl #mallLogo .mlogo a img, #mallLogo .mlogo a .footer_desc dl img {
+  display: block;
+  width: 100px;
+  overflow: hidden;
+  text-align: left;
+  height: 20px;
+  line-height: 20px;
+  color: #8b8b8b; }
+.footer_desc .mobile a, .footer_desc .mobile #mallLogo .mlogo a img, #mallLogo .mlogo a .footer_desc .mobile img {
+  width: 105px;
+  height: 105px;
+  line-height: 105px;
+  text-align: center; }
+
+.footer2 p, .footer2 .footer_information {
+  width: 1190px;
+  margin: 0 auto; }
+
+.clear {
+  clear: both; }
+
+.footer2 {
+  border-top: 2px solid #FF0036;
+  text-align: left;
+  min-height: 177px; }
+.footer2 p {
+  padding: 12px 0;
+  color: #fff;
+  line-height: 25px; }
+.footer2 p a, .footer2 p #mallLogo .mlogo a img, #mallLogo .mlogo a .footer2 p img {
+  margin-right: 3px;
+  color: #fff; }
+.footer2 .footer_information {
+  line-height: 20px;
+  color: #a4a4a4; }
+.footer2 .footer_information a, .footer2 .footer_information #mallLogo .mlogo a img, #mallLogo .mlogo a .footer2 .footer_information img {
+  color: #a4a4a4;
+  margin-right: 65px; }
+.footer2 .footer_information b {
+  display: block;
+  color: #686868;
+  font-weight: 400; }
+.footer2 .footer_information .footer_img {
+  display: block !important;
+  padding: 20px 0 30px; }
+
+.clear {
+  clear: both; }
+
+/*六一活动广告图*/
+.children_day {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  background: #53a1ff; }
+.children_day .children_day_pic {
+  display: block;
+  width: 90%;
+  height: 90px;
+  margin: 0 auto; }
+
+#headerCon {
+  width: 1190px;
+  margin: 0 auto;
+  padding: 30px 0 0;
+  height: 85px;
+  position: relative;
+  font-family: tahoma, arial, "\5b8b\4f53"; }
+
+#mallLogo {
+  float: left;
+  width: 162px;
+  padding-top: 0;
+  line-height: 18px;
+  position: relative;
+  height: 64px; }
+#mallLogo .mlogo {
+  padding-right: 7px;
+  float: left;
+  padding-top: 20px;
+  margin-right: 10px;
+  padding: 0; }
+#mallLogo .mlogo a, #mallLogo .mlogo a img {
+  display: block;
+  width: 145px;
+  height: 30px;
+  overflow: hidden; }
+
+.mallSearch {
+  width: 540px;
+  float: right;
+  overflow: hidden;
+  position: relative; }
+.mallSearch #mq {
+  float: left;
+  width: 367px !important;
+  padding: 5px 3px 5px 5px;
+  border: solid #ff0036;
+  border-width: 2px 0 2px 2px;
+  height: 20px;
+  overflow: hidden;
+  position: relative; }
+.mallSearch button {
+  float: left;
+  display: inline-block;
+  width: 80px;
+  height: 34px;
+  border: 0;
+  font-size: 16px;
+  letter-spacing: 0;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ff0036;
+  font-family: '\5FAE\8F6F\96C5\9ED1', arial, "\5b8b\4f53"; }
+
+.currShopBtn {
+  position: absolute;
+  right: 0;
+  background: #333;
+  width: 80px;
+  height: 34px;
+  border: 0;
+  font-size: 16px;
+  letter-spacing: 0;
+  cursor: pointer;
+  color: #fff;
+  overflow: hidden; }
+
+.wraper {
+  width: 1190px;
+  margin: 0 auto;
+  clear: both;
+  margin-bottom: 600px; }
+
+/*详情页左侧 开始*/
+.left_box {
+  width: 596px;
+  float: left; }
+.left_box dl {
+  width: 84px;
+  float: left; }
+.left_box dl dt {
+  /*向上箭头按钮*/
+  /*向下箭头按钮*/ }
+.left_box dl dt .up {
+  width: 82px;
+  height: 15px;
+  float: left;
+  list-style: none;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  background: url("https://image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png") 33px 5px no-repeat; }
+.left_box dl dt .down {
+  width: 82px;
+  height: 15px;
+  float: left;
+  list-style: none;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  background: url("https://image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png") 33px -21px no-repeat; }
+.left_box dl #smallPic {
+  width: 84px;
+  float: left;
+  overflow: hidden;
+  margin-top: 8px;
+  height: 460px; }
+.left_box dl #smallPic li {
+  width: 82px;
+  height: 82px;
+  display: block;
+  border: 1px solid #c9c9c9; }
+.left_box dl #smallPic li img {
+  display: inline-block;
+  width: 82px;
+  height: 82px;
+  opacity: 1; }
+.left_box .left_pic {
+  float: right;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  border: 1px solid #c9c9c9;
+  margin-top: 0px; }
+.left_box .left_pic img {
+  width: 500px;
+  height: 500px;
+  overflow: hidden; }
+.left_box .left_pic .sm_fang {
+  width: 175px;
+  height: 175px;
+  background: #ccc;
+  opacity: 0.4;
+  display: none;
+  top: 0;
+  left: 0;
+  position: absolute; }
+
+.big_fang {
+  width: 500px;
+  height: 500px;
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  z-index: 100;
+  left: 700px;
+  border: 1px solid #c9c9c9; }
+.big_fang img {
+  display: block;
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/*详情页左侧 结束*/
+/*详情页右侧 开始*/
+.right_box {
+  float: right;
+  width: 570px; }
+.right_box .intro_name {
+  float: left;
+  width: 570px;
+  height: auto !important;
+  min-height: 68px;
+  border-bottom: 1px solid #e0e0e0; }
+.right_box .intro_name h1 {
+  font: 800 18px/34px "Microsoft YaHei";
+  color: #4c4c4c; }
+.right_box .intro_name p {
+  font-size: 14px;
+  color: #ff6900;
+  line-height: 26px; }
+.right_box .intro_sales {
+  float: left;
+  width: 570px;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 18px 0; }
+.right_box .intro_sales .price {
+  font: 800 26px/26px "Microsoft YaHei";
+  color: #ff6900;
+  float: left; }
+.right_box .buy {
+  float: left;
+  width: 570px;
+  margin-bottom: 20px; }
+.right_box .buy dl {
+  float: left;
+  width: 570px;
+  height: 52px; }
+.right_box .buy dl dt {
+  width: 77px;
+  float: left;
+  margin-right: 15px; }
+.right_box .buy dl dt input {
+  border: 1px solid #cdcdcd;
+  width: 54px;
+  height: 48px;
+  font: 400 24px/48px "Microsoft YaHei";
+  color: #626262;
+  text-align: center;
+  float: left; }
+.right_box .buy dl dt a, .right_box .buy dl dt #mallLogo .mlogo a img, #mallLogo .mlogo a .right_box .buy dl dt img {
+  float: left;
+  width: 19px;
+  height: 26px;
+  display: block; }
+.right_box .buy dl dt a.up, .right_box .buy dl dt #mallLogo .mlogo a img.up, #mallLogo .mlogo a .right_box .buy dl dt img.up {
+  background: url("https://image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png") 0 -52px no-repeat; }
+.right_box .buy dl dt a.down, .right_box .buy dl dt #mallLogo .mlogo a img.down, #mallLogo .mlogo a .right_box .buy dl dt img.down {
+  background: url("https://image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png") -20px -52px no-repeat; }
+.right_box .buy dl dd {
+  float: left; }
+.right_box .buy dl dd .buy_btn {
+  float: left;
+  margin-right: 15px; }
+.right_box .buy dl dd .buy_btn a, .right_box .buy dl dd .buy_btn #mallLogo .mlogo a img, #mallLogo .mlogo a .right_box .buy dl dd .buy_btn img {
+  width: 182px;
+  height: 52px;
+  display: block;
+  background: url("https://image.benlailife.com/webStatic/images/n_detail/detailsp_btn_c8171162.gif") no-repeat; }
+.right_box .buy dl dd .buy_btn a.btn01, .right_box .buy dl dd .buy_btn #mallLogo .mlogo a img.btn01, #mallLogo .mlogo a .right_box .buy dl dd .buy_btn img.btn01 {
+  background-position: 0 0; }
+
+/*详情页右侧 结束*/
+
+/*# sourceMappingURL=details.css.map */

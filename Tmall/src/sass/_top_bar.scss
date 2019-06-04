@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/*顶部悬浮*/
+
+.clearfix {
+    clear: both;
+}
+
+.top_bar {
+    top: -50px;
+    position: fixed;
+    background-color: #FF0036;
+    opacity: .95;
+    width: 100%;
+    z-index: 1000;
+    height: 50px;
+    transition: top .2s ease-out;
+    box-shadow: 0 0 4px #eaeaea;
+    overflow: hidden;
+    .bar_container {
+        top: 0;
+        width: 1230px;
+        padding-right: 30px;
+        background-color: transparent;
+        position: relative;
+        height: 50px;
+        margin: 0 auto;
+        border: none;
+        overflow: hidden;
+    }
+}
+
+
+/*悬浮条logo  start*/
+
+.bar_logo {
+    overflow: hidden;
+    width: 160px;
+    margin-top: 12px;
+    z-index: 20;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .logo-en {
+        font-size: 26px;
+        vertical-align: middle;
+    }
+    .logo-zh {
+        padding-left: 5px;
+        font-size: 26px;
+        vertical-align: middle;
+    }
+}
+
+
+/*悬浮条logo  end*/
+
+
+/*悬浮条搜索框 start*/
+
+.bar_search {
+    float: none !important;
+    padding-top: 12px;
+    width: 740px !important;
+    position: relative;
+    z-index: 10;
+    height: 30px;
+    margin: 0 auto;
+    .input_wrap {
+        width: 650px;
+        display: block;
+        height: 30px;
+        background: #fff;
+        input {
+            border-radius: 2px 0 0 2px;
+            width: 640px !important;
+            background: 0 0;
+            outline: transparent dotted 0;
+            opacity: 1;
+            border: none;
+            font-weight: 900;
+            height: 20px;
+            line-height: 20px;
+            padding: 5px 3px 5px 5px;
+            box-sizing: content-box;
+            color: #000;
+            margin: 0;
+            z-index: 2;
+        }
+    }
+    button {
+        height: 32px;
+        width: 90px;
+        border: 0;
+        font-size: 16px;
+        letter-spacing: 4px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #FF0036;
+        overflow: hidden;
+        position: absolute;
+        z-index: 1;
+        right: -1px;
+        top: 10px;
+    }
+}
+
+
+/*悬浮条搜索框 end*/

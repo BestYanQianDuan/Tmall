@@ -1,0 +1,42 @@
+.footer2 p, .footer2 .footer_information {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+.footer2 {
+  border-top: 2px solid #FF0036;
+  text-align: left;
+  min-height: 177px;
+}
+.footer2 p {
+  padding: 12px 0;
+  color: #fff;
+  line-height: 25px;
+}
+.footer2 p a {
+  margin-right: 3px;
+  color: #fff;
+}
+.footer2 .footer_information {
+  line-height: 20px;
+  color: #a4a4a4;
+}
+.footer2 .footer_information a {
+  color: #a4a4a4;
+  margin-right: 65px;
+}
+.footer2 .footer_information b {
+  display: block;
+  color: #686868;
+  font-weight: 400;
+}
+.footer2 .footer_information .footer_img {
+  display: block !important;
+  padding: 20px 0 30px;
+}
+
+/*# sourceMappingURL=footer2.css.map */

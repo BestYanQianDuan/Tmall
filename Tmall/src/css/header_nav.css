@@ -1,0 +1,69 @@
+.header_bar {
+  color: #999;
+  width: auto;
+  height: 32px;
+  padding-bottom: 5px;
+  position: relative !important;
+  background: #f12f04;
+  border-bottom-color: transparent !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  border-bottom: 1px solid #e5e5e5;
+}
+.header_bar a {
+  color: #fff;
+}
+
+.header_container {
+  position: relative;
+  left: -15px;
+  width: 1230px;
+  margin: auto;
+}
+.header_container .login_info {
+  color: #fff;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+}
+.header_container .login_info .login {
+  padding-left: 20px;
+}
+.header_container .login_info .register {
+  padding: 0 10px;
+}
+.header_container .quick_menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.header_container .quick_menu li {
+  float: left;
+  padding: 0 10px;
+}
+.header_container .quick_menu li:hover a {
+  color: #FF0036;
+}
+.header_container .quick_menu li a {
+  display: block;
+  cursor: pointer;
+  z-index: 100001;
+  border: 0;
+  position: relative;
+  height: 32px;
+  line-height: 32px;
+}
+.header_container .quick_menu li a span {
+  color: #e5e5e5;
+  padding: 0 2px;
+  font-weight: 700;
+  font-family: Arial;
+}
+.header_container .quick_menu li .menu_hd span {
+  color: #fff;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+}
+
+/*# sourceMappingURL=header_nav.css.map */

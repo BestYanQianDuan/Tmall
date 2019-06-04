@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*左侧边导航条  start*/
+
+.left_bar {
+    font-family: "Microsoft YaHei", SimSun, '\5b8b\4f53', sans-serif;
+    color: #999;
+    font-size: 12px;
+    width: 35px;
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    left: 3px;
+    z-index: 999;
+    cursor: pointer;
+    .nav_header {
+        background-color: #ff0036;
+    }
+    .left_nav {
+        position: relative;
+        display: block;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 1px;
+        overflow: hidden;
+        font-size: 12px;
+    }
+    ul {
+        li {
+            @extend .left_nav;
+            background-color: rgba(0, 0, 0, .6);
+            a {
+                display: block;
+                line-height: 12px;
+                width: 24px;
+                height: 28px;
+                margin: 6px auto;
+                text-align: center;
+                color: #fff;
+            }
+        }
+    }
+    .active {
+        background: #0AA6E8;
+    }
+    .nav_back {
+        line-height: 13px;
+        background-color: rgba(0, 0, 0, .3);
+        i {
+            font-size: 18px;
+            margin-top: 5px;
+            display: block;
+        }
+    }
+}
+
+
+/*左侧边导航条  end*/

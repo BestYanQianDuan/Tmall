@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/*右侧边导航条  start*/
+
+%logo {
+    left: 0;
+    width: 35px;
+    height: 35px;
+}
+
+.right_bar {
+    right: 0;
+    width: 35px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: #000;
+    z-index: 1001;
+    /*会员权益  start*/
+    .right_member {
+        @extend %logo;
+        position: relative;
+        background-color: #000;
+        z-index: 9;
+        top: 0px;
+        margin: 130px 0px 0px;
+        cursor: pointer;
+        .right_member_logo {
+            @extend %logo;
+            position: absolute;
+            top: 0;
+            background: url('../img/right_tab_logo.png');
+        }
+    }
+    /*会员权益  end*/
+    /*购物车  start*/
+    .right_cart {
+        position: relative;
+        margin: 8px 0px;
+        left: 0;
+        width: 35px;
+        height: 98px;
+        cursor: pointer;
+        border: 1px solid #444;
+        border-width: 1px 0;
+        background-color: #000;
+        z-index: 9;
+        .right_cart_logo {
+            @extend %logo;
+            position: absolute;
+            top: 10px;
+            background: url('../img/right_cart_logo.png');
+        }
+        .right_cart_text {
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            left: 7px;
+            top: 40px;
+            width: 20px;
+            height: 50px;
+            padding: 0;
+        }
+    }
+    /*购物车  end*/
+    /*回到顶部  start*/
+    .right_toTop {
+        @extend %logo;
+        position: absolute;
+        bottom: 0;
+        cursor: pointer;
+        background: url('../img/right_toTop.logo.png');
+    }
+    /*回到顶部  end*/
+}
+
+.right_tab_tip {
+    display: none;
+    position: absolute;
+    right: 35px;
+    top: -1px;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    background-color: #494949;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+
+/*右侧边导航条  end*/

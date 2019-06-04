@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天猫-用户登录</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<body>
+    <!--登录页头部-->
+    <div class="login_header">
+        <img class="login_logo" src="https://img.alicdn.com/tfs/TB1_Gn8RXXXXXXqaFXXXXXXXXXX-380-54.png" />
+    </div>
+    <!--主要内容  start-->
+    <div class="login_banner_wrap" title="618-开门红-服饰主会场">
+        <div class="login_banner_inner">
+            <img class="login_banner" src="https://img.alicdn.com/tfs/TB1z5yPaWSs3KVjSZPiXXcsiVXa-1190-600.png" />
+            <!--登录框 start-->
+            <div class="login_form">
+                <form action="">
+                    <p class="title">密码登录</p>
+                    <p class="username">
+                        <label for="username"></label><input type="text" id="account" placeholder="邮箱/昵称/手机号码">
+                    </p>
+                    <p class="tip"></p>
+                    <p class="password">
+                        <label for="password"></label><input type="password" id="password" placeholder="密码">
+                    </p>
+                    <p class="tip"></p>
+                    <p class="auto-login">
+                        <input type="checkbox" id="auto" checked="checked"><label for="auto">一周内自动登录</label>
+                    </p>
+                    <p class="login-btn">
+                        <a href="javascript:;">登 录</a>
+                    </p>
+                    <p class="register-btn">
+                        <a href="register.html">立即注册</a>
+                    </p>
+                </form>
+            </div>
+            <!--登录框 end-->
+        </div>
+    </div>
+    <!--主要内容  end-->
+
+
+    <!--登录页尾部-->
+    <div class="login_foot"></div>
+    <!--引入jQuery以及cookie.js-->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js "></script>
+    <script src="script/thirdplugins/jquery.cookie.js"></script>
+    <!--引入login.js文件-->
+    <script src="script/js/login.js"></script>
+</body>
+
+</html>
